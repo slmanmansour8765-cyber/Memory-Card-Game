@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Memory Card Game</title>
+  </head>
+  <body>
+    <div id="start-screen">
+      <header>
+        <h1>Memory Card Game</h1>
+        <button id="sound">🔊 الصوت: مفعل</button>
+        <button id="theme">☀️ الوضع النهاري</button>
+        <h2>! أهلا بك في التحدي</h2>
+        <p>
+          ! اختبر قوة ذاكرتك وسرعة ملاحظتك بفتح البطاقات المقلوبة ومطابقة
+          الأزواج بأقل محاولات وأسرع وقت
+        </p>
+      </header>
+
+      <div class="start-main-content">
+        <div class="controls-group">
+          <label for="player-name">Player Name:</label>
+          <input type="text" id="player-name" placeholder="Enter your name" />
+
+          <label for="difficulty-select">Difficulty:</label>
+          <select id="difficulty-select">
+            <option value="easy">Easy ( 12 card - 6 couble )</option>
+            <option value="medium" selected>
+              Medium ( 16 card - 8 couble )
+            </option>
+            <option value="hard">Hard (20 cards - 10 couble )</option>
+          </select>
+
+          <label for="category-select">chose your card category:</label>
+          <select id="category-select">
+            <option value="animals">🐶 Animals</option>
+            <option value="fruits">🍎 Fruits</option>
+            <option value="vehicles">🚀 Vehicles</option>
+          </select>
+        </div>
+
+        <div class="rules">
+          <h3>Game Rules 📜</h3>
+          <ul>
+            <li>Match all card pairs to win.</li>
+            <li>Flipping 2 matching cards keeps them open.</li>
+            <li>Flipping 2 different cards closes them after a second.</li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="start-btn">Start Game now 🚀</button>
+      <div class="leaderboard-box">
+        <h3>Top 5 Scores 🏆</h3>
+        <ol id="scores-list"></ol>
+      </div>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <div class="game-header">
+        <h2>🎮 Memory Card Game</h2>
+        <div class="game-buttons">
+          <button id="restart-btn">🔄 إعادة اللعب</button>
+          <button id="back-btn">🏠 القائمة الرئيسية</button>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div>Player: <span id="player-name-display">--</span></div>
+        <div>Time: <span id="timer-display">00:00</span></div>
+        <div>Moves: <span id="moves-display">0</span></div>
+      </div>
+
+      <div id="board-container"></div>
+    </div>
+
+    <div id="win-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎉 مبروك! لقد فزت!</h2>
+        <p>اللاعب: <span id="modal-player">--</span></p>
+        <p>النقاط: <span id="modal-score">0</span></p>
+        <p>المحاولات: <span id="modal-moves">0</span></p>
+        <p>الوقت: <span id="modal-time">00:00</span></p>
+        <button id="modal-play-again">🔄 لعب مرة أخرى</button>
+      </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
