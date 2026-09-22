@@ -15,10 +15,9 @@ let totalSeconds = 0;
 let matchedPairs = 0;
 let totalPairs = 8;
 
-let animalIcons = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼'];
-let fruitIcons  = ['🍎', '🍌', '🍇', '🍊', '🍓', '🍉', '🍍', '🍒'];
-let spaceIcons  = ['🚀', '🛸', '🪐', '🌟', '👨‍🚀', '🛰️', '🌙', '☄️'];
-
+let animalIcons = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐯', '🦁'];
+let fruitIcons  = ['🍎', '🍌', '🍇', '🍊', '🍓', '🍉', '🍍', '🍒', '🥝', '🍑'];
+let spaceIcons  = ['🚀', '🛸', '🪐', '🌟', '👨‍🚀', '🛰️', '🌙', '☄️', '🌍', '✈️'];
 let cardIcons = [];
 
 startBtn.onclick = function () {
