@@ -17,7 +17,7 @@ let totalPairs = 8;
 
 let animalIcons = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐯', '🦁'];
 let fruitIcons  = ['🍎', '🍌', '🍇', '🍊', '🍓', '🍉', '🍍', '🍒', '🥝', '🍑'];
-let spaceIcons  = ['🚀', '🛸', '🪐', '🌟', '👨‍🚀', '🛰️', '🌙', '☄️', '🌍', '✈️'];
+let spaceIcons  = ['🚀', '🛸', '☀️', '🌟', '👨‍🚀', '🛰️', '🌙', '☄️', '🌍', '✈️'];
 let cardIcons = [];
 
 startBtn.onclick = function () {
